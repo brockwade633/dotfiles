@@ -25,7 +25,7 @@ cd dotfiles
 After entering nvim for the first time, run `:PackerInstall` and/or `:PackerSync` to make sure all the plugins are installed. Run `:PackerStatus` to verify they're all there. Some plugins may require manually loading: `:PackerLoad <plugin>`.
 
 #### Optional
-**Run `nvim` on `vim` commands**
+Run `nvim` on `vim` commands
 ```bash
 ln -s (which nvim) /usr/local/bin/vim
 ```
