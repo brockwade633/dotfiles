@@ -29,3 +29,4 @@ brew install tmux
 echo "Reloading shell with new dot files...\n"
 cp -r .zshrc .p10k.zsh .config .tmux.conf ~
 . ~/.zshrc
+env zsh
