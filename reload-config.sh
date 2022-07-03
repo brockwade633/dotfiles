@@ -1,11 +1,11 @@
 #!/bin/zsh
 
 # install new zsh
-echo "Installing zsh...\n\n"
+echo "\nInstalling zsh..."
 brew install zsh
 
 # install oh-my-zsh
-echo "Installing oh-my-zsh with plugins and theme...\n\n"
+echo "\nInstalling oh-my-zsh with plugins and theme..."
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 
 # install syntax highlighting and auto suggestions oh-my-zsh plugins
@@ -17,16 +17,16 @@ git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zs
 
 
 # install neovim
-echo "Installing neovim...\n\n"
+echo "\nInstalling neovim..."
 brew install neovim
 
 # install tmux
-echo "Installing tmux...\n\n"
+echo "\nInstalling tmux..."
 brew install tmux
 
 
 # reload config from new dot files
-echo "Reloading shell with new dot files...\n"
+echo "\nReloading shell with new dot files..."
 cp -r .zshrc .p10k.zsh .config .tmux.conf ~
 . ~/.zshrc
 zsh
