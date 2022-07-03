@@ -1,12 +1,12 @@
-#!/bin/sh
+#!/bin/zsh
 
-# install zsh
+# install new zsh
 echo "Installing zsh...\n\n"
 brew install zsh
 
 # install oh-my-zsh
 echo "Installing oh-my-zsh with plugins and theme...\n\n"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 
 # install syntax highlighting and auto suggestions oh-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
