@@ -22,7 +22,7 @@ cd dotfiles
 ```
 
 #### Sync Neovim Plugins
-After entering nvim for the first time, run `:PackerInstall` and/or `:PackerSync` to make sure all the plugins are installed. Run `:PackerStatus` to verify they're all there. Some plugins may require manually loading: `:PackerLoad <plugin>`.
+After entering nvim for the first time, run `:PackerInstall` and/or `:PackerSync` to make sure all the plugins are installed. Run `:PackerStatus` to verify they're all there. Some plugins may require manually loading before syncing again: `:PackerLoad <plugin>`.
 
 #### Optional
 Run `nvim` on `vim` commands
