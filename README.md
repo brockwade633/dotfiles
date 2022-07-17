@@ -22,7 +22,10 @@ cd dotfiles
 ```
 
 #### Sync Neovim Plugins
-After entering nvim for the first time, run `:PackerInstall` and/or `:PackerSync` to make sure all the plugins are installed. Run `:PackerStatus` to verify they're all there. Some plugins may require manually loading before syncing again: `:PackerLoad <plugin>`.
+To make sure all the plugins are installed, open `plug.lua` and run `luafile %` to source, then `:PackerInstall` and/or `:PackerSync` to bring down the plugins. Run `:PackerStatus` to verify they're all there. Some plugins may require manually loading before syncing again: `:PackerLoad <plugin>`.
+
+#### Font
+Follow [these instructions](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) to install the `MesloLGS NF` font and use it in your terminal of choice.
 
 #### Optional
 Run `nvim` on `vim` commands
