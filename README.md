@@ -3,7 +3,7 @@ A set of basic dot files for shell and neovim configuration:
 
 - zsh
 - oh-my-zsh
-- powerlevel10k
+- starship
 - neovim
 - tmux
 
