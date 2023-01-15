@@ -12,10 +12,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-# install powerlevel10k oh-my-zsh theme
-git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-
-
 # install neovim
 echo "\nInstalling neovim..."
 brew install neovim
@@ -24,9 +20,12 @@ brew install neovim
 echo "\nInstalling tmux..."
 brew install tmux
 
+# install starship
+echo "\nInstalling starship..."
+brew install starship
 
 # reload config from new dot files
 echo "\nReloading shell with new dot files..."
-cp -r .zshrc .p10k.zsh .config .tmux.conf ~
+cp -r .zshrc .config .tmux.conf ~
 . ~/.zshrc
 zsh
